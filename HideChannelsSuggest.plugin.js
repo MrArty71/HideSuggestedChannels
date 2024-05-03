@@ -16,16 +16,7 @@ module.exports = class HideSuggestedChannels {
         function getElementByXpath(path) {
             return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
         }
-
-
-        const myButton = document.createElement("button");
-        myButton.textContent = "Click me!";
-        myButton.addEventListener("click", () => {
-            window.alert("Hello World!");
-        });
-        const root = getElementByXpath("//*[contains(@data-list-id, 'guildsnav')]");
-        root.append(myButton);
-
+        
         const suggestLocator = "//*[contains(@class,'dismissButton')]";
         const suggestBlock = getElementByXpath(suggestLocator);
         if (document.contains(suggestBlock)) {
