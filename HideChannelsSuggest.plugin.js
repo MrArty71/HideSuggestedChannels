@@ -2,7 +2,7 @@
  * @name HideSuggestedChannels
  * @author Artem Leonov
  * @description Hide the annoying block with the suggested channels using this plugin. When the suggested channels appear, the plugin will automatically click on the hide button
- * @version 0.1.0
+ * @version 1.0.1
  */
 
 
